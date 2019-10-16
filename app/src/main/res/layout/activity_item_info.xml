@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rosskitcher.computingproject20.ItemInfo">
+
+    <TextView
+        android:id="@+id/textMacro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/macronutrients"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showCalories"
+        android:layout_marginLeft="32dp" />
+
+    <TextView
+        android:id="@+id/textProtein"
+        android:layout_width="61dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/protein"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMacro" />
+
+    <TextView
+        android:id="@+id/textCarbs"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/carbohydrates"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFat"
+        android:layout_marginLeft="32dp" />
+
+    <TextView
+        android:id="@+id/textFat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/fat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProtein"
+        android:layout_marginLeft="32dp" />
+
+    <TextView
+        android:id="@+id/showProtein"
+        android:layout_width="62dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/textview"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textProtein"
+        app:layout_constraintStart_toEndOf="@+id/textProtein"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/showCarbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textCarbs"
+        app:layout_constraintTop_toBottomOf="@+id/showFat"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/showFat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textFat"
+        app:layout_constraintTop_toBottomOf="@+id/showProtein"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/showCalories"
+        android:layout_width="95dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="100dp"
+        android:text="@string/textview"
+        android:textColor="@color/colorAccent"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textCalories"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="100dp" />
+
+    <TextView
+        android:id="@+id/textCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/calories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/showCalories"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="100dp" />
+
+    <TextView
+        android:id="@+id/textFibre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/dietary_fibre"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCarbs"
+        android:layout_marginLeft="52dp" />
+
+    <TextView
+        android:id="@+id/textSugars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/total_sugars"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFibre"
+        android:layout_marginLeft="52dp" />
+
+    <TextView
+        android:id="@+id/showFibre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/textview"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textFibre"
+        app:layout_constraintTop_toBottomOf="@+id/showCarbs"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/showSugars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/textview"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textSugars"
+        app:layout_constraintTop_toBottomOf="@+id/showFibre"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/textMicro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/micronutrients"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSugars"
+        android:layout_marginLeft="32dp" />
+
+    <TextView
+        android:id="@+id/textVitaminA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/vitamin_a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMicro"
+        android:layout_marginLeft="32dp" />
+
+    <TextView
+        android:id="@+id/textVitaminC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/vitamin_c"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVitaminA"
+        android:layout_marginLeft="32dp" />
+
+    <TextView
+        android:id="@+id/textVitaminD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/vitamin_d"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVitaminC"
+        android:layout_marginLeft="32dp" />
+
+    <TextView
+        android:id="@+id/textVitaminB6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/vitamin_b6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVitaminD"
+        android:layout_marginLeft="32dp" />
+
+    <TextView
+        android:id="@+id/textVitaminB12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/vitamin_b12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVitaminB6"
+        android:layout_marginLeft="32dp" />
+
+    <TextView
+        android:id="@+id/textPotassium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="186dp"
+        android:text="@string/potassium"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textVitaminA"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="186dp" />
+
+    <TextView
+        android:id="@+id/textCalcium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/calcium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPotassium"
+        android:layout_marginLeft="186dp" />
+
+    <TextView
+        android:id="@+id/textIron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/iron"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCalcium"
+        android:layout_marginLeft="186dp" />
+
+    <TextView
+        android:id="@+id/textMagnesium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/magnesium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textIron"
+        android:layout_marginLeft="186dp" />
+
+    <TextView
+        android:id="@+id/textSodium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/sodium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMagnesium"
+        android:layout_marginLeft="186dp" />
+
+    <TextView
+        android:id="@+id/showVitaminA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/textview"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textVitaminA"
+        app:layout_constraintStart_toEndOf="@+id/textVitaminA"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/showVitaminC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textVitaminC"
+        app:layout_constraintTop_toBottomOf="@+id/showVitaminA"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/showVitaminD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textVitaminD"
+        app:layout_constraintTop_toBottomOf="@+id/showVitaminC"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/showVitaminB6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textVitaminB6"
+        app:layout_constraintTop_toBottomOf="@+id/showVitaminD"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/showVitaminB12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textVitaminB12"
+        app:layout_constraintTop_toBottomOf="@+id/showVitaminB6"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/showPotassium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/textview"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textPotassium"
+        app:layout_constraintStart_toEndOf="@+id/textPotassium"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/showCalcium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textCalcium"
+        app:layout_constraintTop_toBottomOf="@+id/showPotassium"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/showIron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textIron"
+        app:layout_constraintTop_toBottomOf="@+id/showCalcium"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/showMagnesium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textMagnesium"
+        app:layout_constraintTop_toBottomOf="@+id/showIron"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/showSodium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textSodium"
+        app:layout_constraintTop_toBottomOf="@+id/showMagnesium"
+        android:layout_marginLeft="4dp" />
+
+</android.support.constraint.ConstraintLayout>
